@@ -10,7 +10,7 @@ let res
     fetch(window.location.pathname, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url: document.querySelector("#text").value, ckey: document.querySelector("#ckey").value })
+      body: JSON.stringify({ url: document.querySelector("#text").value, key: document.querySelector("#ckey").value })
     }).then(function(response) {
     return response.json();
   })
