@@ -10,16 +10,16 @@ let res
     fetch(window.location.pathname, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url: document.querySelector("#text").value, key: document.querySelector("#key").value })
+      body: JSON.stringify({ url: document.querySelector("#text").value, ckey: document.querySelector("#ckey").value })
     }).then(function(response) {
     return response.json();
   })
   .then(function(myJson) {
     res = myJson;
     document.getElementById("searchbtn").disabled=false;
-	  document.getElementById("searchbtn").innerHTML=' Shorten it';
-    if(res.key!=="")
-    document.getElementById("result").innerHTML=window.location.host+res.key;
+    document.getElementById("searchbtn").innerHTML=' Shorten it';
+    if(res.ckey!=="")
+    document.getElementById("result").innerHTML=window.location.host+res.ckey;
     $('#exampleModal').modal('show')
   }).catch(function(err){alert("Unknow error. Please retry!");
   console.log(err);
