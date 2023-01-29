@@ -6,4 +6,4 @@
 
 <img width="915" alt="image" src="https://user-images.githubusercontent.com/16299874/175760399-1923a596-60b6-43f8-a21e-fc6cf261e952.png">
 
-在线使用：https://quna.cf
+在线使用：https://v1.quna.cf
