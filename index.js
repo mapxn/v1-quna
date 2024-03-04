@@ -1,7 +1,7 @@
 const config = {
 no_ref: "off", //Control the HTTP referrer header, if you want to create an anonymous link that will hide the HTTP Referer header, please set to "on" .
 cors: "on",//Allow Cross-origin resource sharing for API requests.
-static_url: "https://go.quna.cf",
+static_url: "https://go.quna.eu.org",
 }
 
 const html404 = `<!DOCTYPE html>
